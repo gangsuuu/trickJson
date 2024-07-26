@@ -15,7 +15,7 @@
         ,"goal": "횡스크롤 연출방법을 이해하고, gsap과 함께 횡스크롤에 따른 애니메이션 실행"
         ,"type": "scroll-X"
         ,"explanation": "횡스크롤될 섹션의 height크기를 뷰포트보다 길게 설정 하고, 내부의 컨테이너의 wigth값을 뷰포트 보다 넓게 설정한다, 이 후 섹션의 스크롤 진행에 따라, 내부 컨테이너의 transitionX 값이 변경되도록 하여 애니메이션을 구현하였습니다. 횡스크롤이 진행되는 과정에 이미지의 rotate 속성을 변경하여 밋밋한 애니메이션을 보완 하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_06_03.mp4"
+        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_13.mp4"
     },
     {
         "title":  "video player"
@@ -371,11 +371,11 @@
     {
         "title": "3d-cube 구현하기"
         ,"skills":["preserve-3d","JavaScript"]
-        ,"date": "23_12_9"
+        ,"date": "23_12_09"
         ,"goal": "preserve-3d를 이해하고 입체큐브 구현하기"
         ,"type": "transition"
         ,"explanation": "preserve-3d속성이 적응된 태그에서 z값과 rotate 값을 이용하여 cube를 구현하였습니다. 스크롤마다 이벤트가 발생하여 cube를 감싼 태그의 rotate를 회전시킴으로 애니메이션의 디테일을 가미했습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_9.mp4"
+        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_09.mp4"
     },
     {
         "title": "card_show"
