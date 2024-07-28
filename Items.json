@@ -46,7 +46,7 @@
     },
     {
         "title":  "mouseMove + card_drop"
-        ,"skills": "gsap"
+        ,"skills": ["gsap"]
         ,"date": "24_04_29"
         ,"goal": "마우스 움직임에 따라 새로운 요소를 생성하고, 관리하기"
         ,"type": "mouseEvent"
@@ -55,7 +55,7 @@
     },
     {
         "title":  "mouseMove + grid_Glow"
-        ,"skills": "gsap"
+        ,"skills": ["gsap"]
         ,"date": "24_04_28"
         ,"goal": "마우스 움직임에 따라 기존 요소에 애니메이션 추가하기"
         ,"type": "mouseEvent"
