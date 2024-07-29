@@ -6,7 +6,7 @@
         ,"goal": "Lenis를 이용하여 스무스한 애니메이션 연출 이해하기."
         ,"type": "scroll-Y"
         ,"explanation": "Lenis를 통하여 스크롤 애니메이션을 부드럽게 연출했으며, 스크롤진행에 따라 이벤를 발생시키기 위해 observer 라이브러리를 활용했습니다. 트리거가 되는 태그가 뷰포트에서 발견되면 gsapScrollTrigger의 progress에 따라 이미지의 크기가 스무스하게 변하도록 하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_06_03.mp4"
+        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_06_03"
     },
     {
         "title":  "scroll-X 애니메이션"
