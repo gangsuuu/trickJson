@@ -6,7 +6,7 @@
         ,"goal": "Lenis를 이용하여 스무스한 애니메이션 연출 이해하기."
         ,"type": "scroll-Y"
         ,"explanation": "Lenis를 통하여 스크롤 애니메이션을 부드럽게 연출했으며, 스크롤진행에 따라 이벤를 발생시키기 위해 observer 라이브러리를 활용했습니다. 트리거가 되는 태그가 뷰포트에서 발견되면 gsapScrollTrigger의 progress에 따라 이미지의 크기가 스무스하게 변하도록 하였습니다."
-        ,"src:" : "raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_06_03"
+        ,"src" : ""https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_06_03.mp3"
     },
     {
         "title":  "scroll-X 애니메이션"
@@ -15,7 +15,7 @@
         ,"goal": "횡스크롤 연출방법을 이해하고, gsap과 함께 횡스크롤에 따른 애니메이션 실행"
         ,"type": "scroll-X"
         ,"explanation": "횡스크롤될 섹션의 height크기를 뷰포트보다 길게 설정 하고, 내부의 컨테이너의 wigth값을 뷰포트 보다 넓게 설정한다, 이 후 섹션의 스크롤 진행에 따라, 내부 컨테이너의 transitionX 값이 변경되도록 하여 애니메이션을 구현하였습니다. 횡스크롤이 진행되는 과정에 이미지의 rotate 속성을 변경하여 밋밋한 애니메이션을 보완 하였습니다."
-        ,"src:" : "raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_13"
+        ,"src" : "raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_13"
     },
     {
         "title":  "video player"
@@ -24,7 +24,7 @@
         ,"goal": "video 태그의 속성을 이해하기"
         ,"type": "Video"
         ,"explanation": "마우스 클릭으로 video 태그의 play(), pasue() 메소드르를 다루며, 커스터마이징 video 컨트롤러를 제작하여 영상 진행에 따른 currentTime과 duration값을 계산하여 영상 state를 출력하였으며, 또한 상호작용하여 유저의 임의로 원하는 currentTime을 선택하여 플레이 할 수 있도록 하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_12.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_12.mp4"
     },
     {
         "title":  "card_slide 체인지 트랜지션"
@@ -33,7 +33,7 @@
         ,"goal": "핵심 타겟의 카드의 변화에 따른 슬라이드 트랜지션 적용하기"
         ,"type": "transition"
         ,"explanation": "마우스 클릭에 맞추어, 출력된 카드가 다른 카드로 변하는 것에 대한 연출법으로 슬라이드 애니메이션을 선택하였으며, 스무스한 애니메이션 연출을 위해 gsap을 사용하였습니다. 애니메이션을 무한루프로 진행할 수 있도록, 애니메이션 실행시 새로운 요소의 아이템을 생성한 뒤 애니메이션이 적용되게 하였으며, 기존 생성된 아이템은 애니메이션이 종료된 후 dom에서 삭제되도록 하였습니다. 백그라운드의 변경에는 polygon, 속성을 이용하였는데 transition이나, top 속성을 이용할 경우 내부 카드나,텍스트 요소에 애니메이션 영향을 미칠 것을 고려했기 때문입니다. text의 경우 scale값을 조정하여 디테일을 추가하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_07.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_07.mp4"
     },
     {
         "title":  "pushed 텍스트 이펙트"
@@ -42,7 +42,7 @@
         ,"goal": "스크롤 트리거 onUp'date'의 인자값의 progress 속성을 이해하기"
         ,"type": "scroll-Y"
         ,"explanation": "gsapScrollTrigger의 onUp'date'메소드는 ScrollTrigger의 trigger가 작동될 때 발생하는 이벤트인데, 이때 인자값을 받아오도록 하면, 트리거의 속성을 받아올 수있습니다. 이중 인자의 progress 값은, 트리거내의 현재 진행률을 뜻 합니다. 이 값의 변화에 따라, 주변의 다른 태그에 애니메이션을 추가 하여, 중앙의 텍스트가 옆으로 밀리는 듯한 애니메이션을 연출 하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_05.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_05_05.mp4"
     },
     {
         "title":  "mouseMove + card_drop"
@@ -51,7 +51,7 @@
         ,"goal": "마우스 움직임에 따라 새로운 요소를 생성하고, 관리하기"
         ,"type": "mouseEvent"
         ,"explanation": "마우스 무브 이벤트를 활용하여 움직임에 반응하여 해당위치에 img를 생성하도록 하였습니다. 한번에 생성될 수 있는 카드의 한계를 설정하여 무한히 생성되는 것을 방지 했으며, 한계를 넘어섰을 경우, 가장 마지막 요소를 제거하는 방식으로 카드가 움직이는 것 처럼 보일 수 있도록 연출 하였습니다. 또한, 마우스의 움직임이 멈출시 카드가 사라지게 하기 위해, 중력의 영향을 받아 아래로 떨어지듯이 연출했으며, setTimeout과 clearTimeout을 사용하여 이를 구현 하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_29.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_29.mp4"
     },
     {
         "title":  "mouseMove + grid_Glow"
@@ -60,7 +60,7 @@
         ,"goal": "마우스 움직임에 따라 기존 요소에 애니메이션 추가하기"
         ,"type": "mouseEvent"
         ,"explanation": "애니메이션의 주체가 될 요소들에 각각 index와 이벤트를 등록해줍니다. 그 후 이벤트가 실행 될 때, 해당 요소의 번호에 열에 포함된 요소의 갯수를 빼고 더하여 위 아래 라인을의 블럭 index값을 추출하여, 이벤트 발생지에서 가까운 8개의 값중 랜덤하게 애니메이션이 실행되도록 적용하였습니다. 이후 setTimeout을 통해서, 애니메이션이 끝날 수 있도록 하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_28.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_28.mp4"
     },
     {
         "title":  "hover_card + card_slide"
@@ -69,7 +69,7 @@
         ,"goal": "마우스 호버기능을 script로 구현하고, 기능에 따른 애니메이션의 디테일 관리하기"
         ,"type": "mouseEvent"
         ,"explanation": "텍스트열에 마우스가 진입하는 것을 확인 하고, 해당 열과 관련된 이미지를 출력 하게 만들었습니다. 이미지의 주소 값들을 배열로 저장하였으며, querySelectorAll로 저장되어있는 텍스트열값 중, 이벤트가 발생한 열의 index 값을 받아와 배열에 입력하여 이미지 주소값을 얻어왔습니다. 이후 이미지를 담을 요소를 새로 생성하였고, 이미지의 변화에 디테일을 주기 위하여 polygon값을 gsap으로 수정하여 자연스러운 애니메이션을 연출하였습니다. 또한, gsap이 끝난 후 기존에 출력되어있던 이미지 컨테이너를 제거 하여 dom을 관리하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_23.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_23.mp4"
     },
     {
         "title":  "img_indicator "
@@ -78,7 +78,7 @@
         ,"goal": "현재 보고 있는 컨텐츠의 진행률을 표현하기"
         ,"type": "scroll-Y"
         ,"explanation": "스크롤로 진행되는 페이지에서, 보고 있는 핵심 컨텐츠의 진행률이 얼마나 되는지를 표현하는 것과, 어떤 아이템을 보고 있는지 표현할 수 있는 인디케이터를 좌측에 구현하였습니다. 해당 컨텐츠의 전체 크기와 컨텐츠 시작 위치, 스크롤 이벤트로 얻은 현재 window.scrollY 값을 비교하여, 전체적인 퍼센트 만큼 인디케이트의 transitionY의 퍼센트값을 변경하는 식으로 애니메이션을 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_21.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_21.mp4"
     },
     {
         "title":  "card_Wrapper-3d"
@@ -87,7 +87,7 @@
         ,"goal": "뷰포트내 마우스의 위치에 따라 특정 요소의 위치를 변경시키고, preserve-3d 값을 이용하여 3d 요소 구현하기"
         ,"type": "mouseEvent"
         ,"explanation": "mouseMove이벤트의 파라미터 값으로 현재 마우스의 위치를 확인 할 수 있는clientX,clientY 얻을 수 있습니다. 이 값을 가지고 뷰포트의 중심을 기준으로 4등분하여, 어디에 얼마나 치우쳐있는지를 파악하고, 그 정도와 대비하여 중앙 원형 카드 컨테이너의 x,y,z 값을 변경하여 입체감을 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_14.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_14.mp4"
     },
     {
         "title":  "section_transition + 2.5d"
@@ -96,7 +96,7 @@
         ,"goal": "마우스이벤트로 2.5d 애니메이션을 연출하기. section의 변화에 따른 트랜지션 구현."
         ,"type": "transition"
         ,"explanation": "마우스 움직임에 맞추어 특정 오브젝트의 위치를 변경하는 것으로 캐릭터가 마우스의 방향으로 바라보는 것 처럼 구현했으며, 지속적인 애니메이션을 연출하기 위해서 keyframe을 infinit로 설정하여 무한 반복하였습니다. 이 후 새로운 섹션으로 변화는 과정을 각각의 섹션이 아래서 위로 밀리는 듯이 연출하여 디테일을 살렸습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_09.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_09.mp4"
     },
     {
         "title": "polygons_intro"
@@ -105,7 +105,7 @@
         ,"goal":"뷰포트를 등분하여 각각의 영역을 조정하고, 이를 통해 인트로 애니메이션 구현하기"
         ,"type": "intro"
         ,"explanation": "화면을 등분하고 싶은 만큼 block을 만들어주고, 상위에 blcok컨테이너를 flex속성으로 뷰포트에 가득차게 합니다. 이후 각각 block의 폴리곤 속성을 gsap에 맞추어 변경되도록 하였습니다. 이 때 stagger값을 일반적인 숫자로 표현시 순서대로 작동되지만, from 값을 random으로 설정하여 배열 내 순서가 아닌 랜덤한 순서로 작동되도록 구현하였습니다. 시작 번호는 상위블럭을 overflow:hidden 조정 후 각 번호가 밀어내는 트릭으로 만들었습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_07.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_07.mp4"
     },
     {
         "title": "scroll_card_slide"
@@ -114,7 +114,7 @@
         ,"goal":"스크롤트리거를 이용하여 카드의 polygon 속성을 컨트롤하고, 이를 이용하여 슬라이드 애니메이션 구현하기."
         ,"type": "transition"
         ,"explanation":"카드 슬라이드에는 이미지의 배율이 커지는 것과, 스크롤에 따른 트랜지션 두가지의 디테일이 구비되어 있습니다. 이를 구현하기 위해서 이미지 태그의 스케일을 크게 하는 트리거와, 이미지 태그를 감싼 태그에 overflow:hidden 값을 추가하여, 이미지의 배율만 커지는 연출을 구현하였습니다. 이후 스크롤에 따른 컨테이너 태그의 폴리곤 값을 조정하여 트랜지션을 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_04.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_04_04.mp4"
     },
     {
         "title": "카테고리 트랜지션"
@@ -123,7 +123,7 @@
         ,"goal":"태그에 data-attribute를 설정하고, 동적으르 특정 data 값을 필터링하여 관리하기 "
         ,"type": "transition"
         ,"explanation":"특정 카테고리를 선택할 데이터를 포함한 json에서 해당 카테고리를 포함한 아이테를 추출하여, dom에 동적으로 추가해주었습니다. 이때 카테고리를 얻은 방법은 카테고리 버튼에 data-attrbute를 설정하고, 클릭시 해당 data를 받아와 json파일속 값들과 비교하는 방법으로 구현하였습니다. 아이템이 선택되고나면, 아이템을 2열로 표현하기 위해서 2개의 컨테이너를 생성하고 번갈아가며 넣는 방법을 선택하였습니다. 선택된 카테고리를 강조하기 위해서 애니메이션을 추가하였고, 동시에 아이템의 생성과 삭제에도 애니메이션 디테일을 추가하여 퀄리티를 높혔습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_26.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_26.mp4"
     },
     {
         "title": "click_source effect"
@@ -132,7 +132,7 @@
         ,"goal":"마우스 클릭시 출력되는 애니메이션을 다뤄보기"
         ,"type": "mouseEvent"
         ,"explanation":"이미지 소스가 적고, 텍스트가 강조되는 페이지에서 클릭시 애니메이션이 출력되는 디테일로 퀄리티를 많이 높이는 것을 구현해본 것으로 마우스 클릭시 동적으로 아이템을 생성하였고, 아이템의 밋밋함을 살리기 위해서 애니메이션을 추가하였습니다. 이후 setTimeout을 해당아이템에 설정하여 아이템이 사라질 수 있도록 연출 하였습니다"
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_24.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_24.mp4"
     },
     {
         "title": "lottie-VideoToSvg"
@@ -141,7 +141,7 @@
         ,"goal":"동영상을 svg로 관리해주는 lottie 다뤄보기"
         ,"type": "scroll-Y"
         ,"explanation":" lottie파일의 크기가 비교적 큰 video같은 애니메이션 파일을 json으로 변경한 것으로, lottie-web은 이를 svg로 관리하는데 도움을 주는 라이브러리입니다. lottie로 얻어온 파일을 스크롤트리거를 통하여 스크롤마다 프레임이 변경되는 식으로 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_18.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_18.mp4"
     },
     {
         "title": "section-change"
@@ -150,7 +150,7 @@
         ,"goal":"마우스 클릭으로 섹션 또는 아티클이 변경되는 애니메이션 구현하기"
         ,"type": "transition"
         ,"explanation":"json에 들어있는 정보들을 이용하여 아티클을 동적으로 생성하고 관리하는 방법으로, 마우스 클릭시 아이템들에 gsap애니메이션을 적용하여 아티클이 변경되게 하였습니다. 이 과정에서 제목의 영역은 json으로 얻어온 텍스트를 split로 각 스펠링을 배열에 저장하였고, 각각 애니메이션을 등록해주는 것으로 퀄리티를 높혔습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_17.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_17.mp4"
     },
     {
         "title": "index-intro"
@@ -159,7 +159,7 @@
         ,"goal":"gsap을 활용하여 인트로 구현하기"
         ,"type": "intro"
         ,"explanation":"초반 오프닝 텍스트 애니메이션은 해당 텍스트를 split으로 분해하여 배열로 만든 후, 각각 애니메이션을 추가하는 방법으로 구현하였습니다. 이후 이어지는 아이템들의 트랜지션 애니메이션을 추가하는 것으로 전체적인 애니메이션 디테일을 끌어 올리는 것에 집중하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_11.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_11.mp4"
     },
     {
         "title": "scroll-z 애니메이션"
@@ -168,7 +168,7 @@
         ,"goal":"스크롤링으로 아이템들의 trnasiton-z값을 수정하여 입체감을 구현하기 "
         ,"type": "scroll-Z"
         ,"explanation":"preserve-3d는 가벼운 3d를 구현하게 해주는 속성으로서, translateZ값을 통해서 값을 수정 할 수 있습니다. 스크롤트리거로 섹션내 출력될 아이템들의 z값을 변경시키는 방법으로, 카드가 앞 또는 뒤로 움직이는 것처럼 보이게 구현할 수 있었습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_04.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_04.mp4"
     },
     {
         "title": "hover_categori 애니메이션"
@@ -177,7 +177,7 @@
         ,"goal":"출력 될 컨텐츠를 호버된 카테고리에 따라 변경되도록 하기"
         ,"type": "transition"
         ,"explanation":"마우스가 좌측 카테고리영역으로 들어가게 되면, 해당 카테고리를 포함하고 있는 아이템들이 생성되고, gsap애니메이션으로 자연스럽게 출력되도록 연출하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_03.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_03_03.mp4"
     },
     {
         "title": "fall_in_article"
@@ -186,7 +186,7 @@
         ,"goal":"아티클이 확대되며 아티클 속의 아티클을 보는 듯한 연출 구현하기"
         ,"type": "transition"
         ,"explanation": "섹션이 변경됨에 따라 자연스럽게 연결하는 방법 중, scale이 커짐으로서 해당 섹션속의 새로운 섹션이 존재하는 연출로 자연스러운 트랜지션을 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_27.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_27.mp4"
     },
     {
         "title": "pushed_card_slide"
@@ -195,7 +195,7 @@
         ,"goal":"밀어내기 방식으로 카드의 슬라이드를 3d입체적인 애니메이션으로 세련되게 구현하기"
         ,"type": "transition"
         ,"explanation": "클릭에 반응하여 카드들이 앞으로 하나씩 밀어내는 식으로 제작하였고, 이를 구현하기 위해서 prevent-3d의 translateZ 값을  gspa으로 변경하는 방법으로 구현하였습니다. 앞으로 밀린 카드는 y의 값을 변경하는 방법으로 뷰포트에서 안보게 한뒤, z값과 y값을 순서대로 다시 한번 변경하여 뒤에 생성되는 듯한 느낌을 연출하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_25.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_25.mp4"
     },
     {
         "title": "card-spread"
@@ -204,7 +204,7 @@
         ,"goal": "explores 버튼과 상호하여, 아이템들의 위치가 변경되도록 하기"
         ,"type": "transition"
         ,"explanation":"locomotive는 스크롤의 애니메이션을 돕는 라이브러리다. 사용법은 적용하고 싶은 영역을 추가하고, smooth 값만 설정해주면 되기에 크게 어려운 부분이없다. 아이템에 적용된 애니메이션은 flip이란 라이브러리를 통해서 만들었다, flip은 시작값과, 최종값을 입력하는 방법으로 작동된다. "
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_20.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_20.mp4"
     },
     {
         "title": "intro 애니메이션"
@@ -213,7 +213,7 @@
         ,"goal": "gsap을 활용하여 인트로 구현하기"
         ,"type": "intro"
         ,"explanation":"이미지의 트랜지션을 활용하여 intro를 구축하였습니다. 이미지의 polygon값과 position 변경하는 방법으로 애니메이션의 디테일을 살렸습니다. 이후 인트로를 담당하던 섹션의 polygon값을 변경하는 것으로 위로 밀려나는 느낌이 아닌, 위로 사라지는 듯한 연출을 하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_18.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_18.mp4"
     },
     {
         "title": "Show_menu"
@@ -222,7 +222,7 @@
         ,"goal":"gsap.timeline을 활용하여 반복 또는 reverse속성의 애니메이션 관리하기"
         ,"type": "menu"
         ,"explanation":"gsap.timeline은 애니메이션이 순서대로 작동되게 하는 방식입니다. 함수로 보관할 수 있고, play(), reverse()같은 메소드로 함수를 호출하는 방식으로 사용 가능한데, 이를 이용하여 메뉴출력과 메뉴접기에 애니메이션을 플레이하거나 역플레이하여 사용할 수 있습니다"
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_15.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_15.mp4"
     },
     {
         "title": "categori_background_change"
@@ -231,7 +231,7 @@
         ,"goal":"서로 다른 속성값을 클래스에 부여하고, 클래스의 변경으로 애니메이션 출력하기"
         ,"type": "transition"
         ,"explanation":"querySelectorAll로 카테고리들을 지정하고 커서가 특정카테고리에 진입하게되면, 행당 카테고리의 index값에 맞추어 swhich로 지정한 클래스명을 부여받도록 하였습니다. 클래스명이 변경될 때 transition에 시간값이 있다면, 클래스변경 간의 속성들이 시간값동안 변경됩니다. 이를 응용하여 애니메션을 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_11.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_11.mp4"
     },
     {
         "title": "varying_card_intro"
@@ -240,7 +240,7 @@
         ,"goal":"gsap을 활용하여 인트로 구현하기"
         ,"type": "intro"
         ,"explanation":"다수의 카드가 출현하는 애니메이션으로서, 5개의 구역을 나누고, 구역내 아이템들을 gsap의 stagger 값으로 차례대로 출력되게 하였습니다. 화면의 애니메이션 질감을 채우기 위해 위,아래 순서대로 교차하여 출력되게 하였으며, 마지막은 가장 중심의 이미지가 커지는 느낌으로 디테일을 살렸습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_06.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_02_06.mp4"
     },
     {
         "title": "card_show_transition"
@@ -249,7 +249,7 @@
         ,"goal": "스켈레톤ui 연출하기"
         ,"type": "transition"
         ,"explanation": "스켈레톤ui는 로딩되는 동안 컨텐츠의 레이아웃을 먼저 보여주는 방법입니다. 이는 자료를 가져오는 시간동안 유저의 이탈을 막기위한 장치입니다. 이러한 스켈레톤ui의 느낌으로 아이템이 출력되는 것을 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_22.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_22.mp4"
     },
     {
         "title": "countDown-Intro"
@@ -258,7 +258,7 @@
         ,"goal": "로딩률을 보여주는 인트로 구현하기"
         ,"type": "intro"
         ,"explanation": "인트로는 사용자에게 데이터가 페이지를 사용하는데 가장 먼저 접하게 되는 소스입니다. 이 때 로드되어야 할 아이템이 많을 수록 로딩되는 속도는 느려지는데, 이 때 사용되는 방법 중 하나가 얼마나 로드 되었는지 보여주는 것입니다. 로딩율을 보여주는 듯한 인트로의 연출 하였으며, 이미지에 애니메이션을 추가함으로서 애니메이션의 질감을 높혔습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_21.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_21.mp4"
     },
     {
         "title": "serach_text"
@@ -267,7 +267,7 @@
         ,"goal": "input에 입력된 값으로 출력되는 아이템 관리하기"
         ,"type": "keyEvent"
         ,"explanation": "json으로 얻어온 자료와, input에 입력된 텍스트를 통해, 컨텐츠에 출력되는 아이템을 변경시키는 방법입니다. 영어로 검색시에 모든 문자를 대문자로 치환하여 서로 검증하여 기능을 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_20.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_20.mp4"
     },
     {
         "title": "Show_menu"
@@ -276,7 +276,7 @@
         ,"goal": "gspa을 이용하여 모달창을 자연스럽게 출력하고 지우기"
         ,"type": "menu"
         ,"explanation": "apply 버튼을 누를 경우, submit할 정보를 입력할 모달창이 나오게 만들었습니다. gsap.timeline을 이용하여 구현하였으며, timeline의 메소드중 하나인 play(),revese()값을 이용하여 모달창의 토글에 따라 애니메이션을 순서대로 또는 역순으로 진행하여, 일체감을 높혔습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_19.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_19.mp4"
     },
     {
         "title": "card_detail "
@@ -285,7 +285,7 @@
         ,"goal": "이미지의 src와, 특정 값을 불러와 적용하기"
         ,"type": "transition"
         ,"explanation": "좌측에 있는 카드를 클릭시, 우측에 있는 디테일컨텐츠의 이미지가 선택된 이미지로 변경되는 방식으로 하였습니다. 선택된 이미지의 src를 추출하여, 새로 생성된  이미지의 src로 지정하여 같은 이미지를 구현하였습니다. 이후 자연스러운 애니메이션을 주기위해, 우측에서 좌측으로 이미지를 밀어내는 연출을 선택하였으며, 선택된 아이템의 값을 포함한 배열의 컬러값을 추출하여 배경색이 변경되도록 하였습니다 "
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_18.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_18.mp4"
     },
     {
         "title": "menu_burger"
@@ -294,7 +294,7 @@
         ,"goal": "class를 변경하여 menu_burger를 수정하기"
         ,"type": "menu"
         ,"explanation": "class에 변화가 있을 때, 해당 클레스에 transition값이 설정되어있다면, 수치가 변경되는 것이 애니메이션으로 출력됩니다. menu버튼을 누를 때 이점을 이용하여 burger의 class를 토글하여 메뉴바 또는 닫기 버튼으로 보이도록 출력하였습니다. 또한 메뉴모달이 출력되는 과정은 다수의 블럭으로 나누어진 배경의 polygon값을 순차적으로 변경하는 방식으로 애니메이션의 디테일을 높혔습니다"
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_14.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_14.mp4"
     },
     {
         "title": "rotate card"
@@ -303,7 +303,7 @@
         ,"goal": "코사인 법칙을 이해하여, x,y 값을 구하고 원형의 컨텐츠 제작하기"
         ,"type": "mouseEvent"
         ,"explanation": "카드의 갯수만큼 360을 나누어 아이템의 deg를 구하고, 반지름값과 cos, sin 값을 이용하여 아이템의 x,y값을 도출하였습니다. 특정 영역에 마우스가 진입하면 이에 따라 아이템들이 원형을 이루어 출력되도록 하였습니다. 이후 gsap.trick값을 이용하여 아이템에 지속적으로 값이 변경될 수 있도록 해 애니메이션을 완성하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_11.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_11.mp4"
     },
     {
         "title": "intro 애니메이션"
@@ -312,7 +312,7 @@
         ,"goal": "polygon을 이용하여 인트로 구현하기"
         ,"type": "intro"
         ,"explanation": "intro는 4개의 block이 변경되는 방식으로 구현하였습니다. 블럭의 각 polyong값을 gsap으로 수정하는 것과, 애니메이션의 방향에 따라 텍스트가 이동되는 것으로 애니메이션의 질감을 높혔습니다. "
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_07.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_07.mp4"
     },
     {
         "title": "menu_modal"
@@ -321,7 +321,7 @@
         ,"goal": "gsap.timeline을 활용하여 반복 또는 reverse속성의 애니메이션 관리하기"
         ,"type": "intro"
         ,"explanation": "grid의 레이아웃의 느낌을 가지고 있는 menu modal을 출력하는데, 중앙부터 펼쳐지는 듯한 연출을 선택하여 애니메이션의 결을 일치 시켰습니다. 이후 gsap.timeline으로 구현하였고, timeline의 메소드인 play()와 reverse()메소드를 이용하여 애니메이션의 양방향으로 진행할 수 있게 하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_03.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/24_01_03.mp4"
     },
     {
         "title": "mousemove_blur"
@@ -330,7 +330,7 @@
         ,"goal": "캔버스태그를 활용하여 백그라운드 구현하기"
         ,"type": "mouseEvent"
         ,"explanation": "createLinearGradient를 이용하여 canvas의 전체적인 배경을 구현하였습니다. 이후 마우스에 반응할 원과,꼬리들의 파라미터를 조정하였고 mousemove에 따라 파라미터값이 변하도록 설정하였습니다. 이로 마우스를 따라다니는 특수 이펙트를 구현할 수 있었고, 캔버스의 filter:blur 값을 조정함으로서 디테일을 높혔습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_30.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_30.mp4"
     },
     {
         "title": "menu_modal"
@@ -339,7 +339,7 @@
         ,"goal": "gsap.timeline을 활용하여 반복 또는 reverse속성의 애니메이션 관리하기"
         ,"type": "menu"
         ,"explanation": "polygone값이 디폴트값에서 (50% 50%,50% 50%,50% 50%,50% 50%)으로 변경시 가운데로 모이는 연출을 할 수있습니다. 이 연출을 활용하여 섹션 하위에 모달창을 미리 준비 시켜놓고, 메뉴버튼을 클릭시 섹션이 가운데로 닫히는 느낌으로 모달창이 출력되는 애니메이션을 연출 하였습니다"
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_23.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_23.mp4"
     },
     {
         "title": "menu_modal"
@@ -348,7 +348,7 @@
         ,"goal": "polygon값 변경을 통하여 menu_modal 출력하기"
         ,"type": "menu"
         ,"explanation": "메뉴버튼을 클릭하면, 기존에 수정되어있는 polygon 값을 기본값으로 변경하는 방법으로 모달창이 보여지는 연출을 해냈습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_21.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_21.mp4"
     },  
     {
         "title": "index-intro"
@@ -357,7 +357,7 @@
         ,"goal": "anime으로 인트로 구현하기"
         ,"type": "intro"
         ,"explanation": "anime 라이브러리는 돔 애니메이션을 지원하는 라이브러리 중 하나로, 쉽게 애니메이션을 구현할 수 있습니다. 이 라이브러리를 이용하여서 애니메이션을 구현해 보았습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_17.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_17.mp4"
     },
     {
         "title": "img_indicator 보기"
@@ -366,7 +366,7 @@
         ,"goal": "scrollTrigger를 이용하여 현재 핵심이미지의 인디케이터 표시하기"
         ,"type": "transition"
         ,"explanation": "scrolltrigger는 애니메이션 뿐만아니라, 트리거가 작동되면 onToggle 등의 프로퍼티로 스크립트를 구현할 수 있습니다. 이점을 이용하여 메인이될 이미지의 top부분이 뷰포트 중앙지점에 도착할 때 인디케이터 중 현재 출력중인 이미지의 외각이 변경되도록 하여 기능을 구현하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_10.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_10.mp4"
     },
     {
         "title": "3d-cube 구현하기"
@@ -375,7 +375,7 @@
         ,"goal": "preserve-3d를 이해하고 입체큐브 구현하기"
         ,"type": "transition"
         ,"explanation": "preserve-3d속성이 적응된 태그에서 z값과 rotate 값을 이용하여 cube를 구현하였습니다. 스크롤마다 이벤트가 발생하여 cube를 감싼 태그의 rotate를 회전시킴으로 애니메이션의 디테일을 가미했습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_09.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_09.mp4"
     },
     {
         "title": "card_show"
@@ -384,7 +384,7 @@
         ,"goal": "카드 슬라이드 출력하기"
         ,"type": "transition"
         ,"explanation": "카드의 scale과 rotate값을 변경시키는 방식으로 딜러가 카드를 배급하는 느낌을 연출하였습니다. 이후 클릭으로 카드를 선택시에 선택받지 못한 카드의 스케일을 줄임으로 뷰포트에서 사라지게 연출하였으며, 이후 카드 취소시에 스케일이 커짐으로 다시 보이도록 하였습니다"
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_02.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_02.mp4"
     },
     {
         "title": "marquee"
@@ -393,7 +393,7 @@
         ,"goal": "지속적으로 움직이는 텍스트 구현하기,"
         ,"type": "transition"
         ,"explanation": "마우스 클릭시, 클릭된 지점이 중앙을 기준으로 좌측인지 우측인지 파악하고 방향에 따른 순서의 아이템이 출력되게 하였습니다. 이때 polygon 값을 이용하여 애니메이션의 디테일을 살렸습니다. marqee의 기능은 텍스트에 keyframe infinit 속성을 이용하여 반복되어 작동되도록 설정하였습니다. "
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_01.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_12_01.mp4"
     },
     {
         "title": ""
@@ -402,7 +402,7 @@
         ,"goal": "스크롤에 따른 섹션변화연출하기"
         ,"type": "scroll-Y"
         ,"explanation": "스크롤로 페이지가 진행되는 과정에서, 특정아이템이 중심에 도착했을 때, 해당 아이템의 position을 변경하여, 해당위치에 고정되도록 하여, 카드의 애니메이션에 역동성을 부여하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_26.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_26.mp4"
     },
     {
         "title": "Show_menu"
@@ -411,7 +411,7 @@
         ,"goal": "쿠키 등 특정 모달을 출력하기"
         ,"type": "menu"
         ,"explanation": "쿠기 나 메뉴 버튼을 클릭할 경우, 컨텐츠에 집중하기 위해 배경을 블러처리하는 연출을 사용합니다. 이 연출을 구현하기위해 우측 ovelayy 아이템을 누르게 되면 모달이 출력됨과 동시에 배경에 blur 값을 주었습니다. 또한 블러되는 것이 자연스러울 수 있도록 transition 값을 추가하여 연출하였습니다"
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_25.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_25.mp4"
     },
     {
         "title": "card_spread_intro" 
@@ -420,7 +420,7 @@
         ,"goal": "카드를 이용한 인트로와 블러효과"
         ,"type": "intro"
         ,"explanation": "인트로 시작시에 중앙에서부터 카드들이 확장되며 등장하는 연출을 사용하였는데, 이 때 scale 속성이 아닌 polygon 속성을 이용하여 이미지의 크기가 변경되지 않도록 하였습니다. 이후 카드를 선택시에 중앙에 나타나게 하며 다른 요소들의 블러를 흐리게 하는 것으로 선택 된 카드에 집중 할 수 있게 하였습니다"
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_18.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_18.mp4"
     },
     {
         "title": "infinite loop scollX"
@@ -429,7 +429,7 @@
         ,"goal": "X축으로 무한 스크롤링 연출하기"
         ,"type": "scroll-X"
         ,"explanation": "X축으로 무한히 스크롤되는 애니메이션을 연출하였습니다. 컨테이너의 vw, vh를 뷰포트보다 넓게 잡은 것이 아닌, wheel이 일어날 때 얻은 값을 통해서 전체 이미지의 X축을 이동시키는 방법으로 구현 하였습니다 "
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_17.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_17.mp4"
     },
     {
         "title": "menu_modal"
@@ -438,6 +438,6 @@
         ,"goal": "모달 메뉴를 구현하기"
         ,"type": "menu"
         ,"explanation": "메뉴 버튼을 눌렀을 때 헤더 부분에 모달창이 출력되도록 만들었습니다. 모달창이 출력되는 방식과, 모달창의 컨텐츠들에 gsap을 이용하여 트랜지션 디테일을 추가 했고, close 버튼을 눌렀을 때 애니메이션이 역순으로 재생되도록 설정하였습니다."
-        ,"src:" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_14.mp4"
+        ,"src" : "https://raw.githubusercontent.com/gangsuuu/trickJson/main/videos/23_11_14.mp4"
     }
 ]
